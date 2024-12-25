@@ -62,8 +62,8 @@ const UpdateBook = () => {
         cancelButtonColor: "#d33",
         confirmButtonText: "Yes, It's Okay!",
       });
-      navigate('/dashboard/manage-books');
       await refetch();
+      navigate('/dashboard/manage-books');
     } catch (error) {
       console.log("Failed to update book.");
       alert("Failed to update book.");
